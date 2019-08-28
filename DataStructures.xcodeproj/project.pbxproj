@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2550642315B63600632D43 /* MovieBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2550632315B63600632D43 /* MovieBrowser.swift */; };
+		CE2550672315B65E00632D43 /* WebBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2550652315B65E00632D43 /* WebBrowser.storyboard */; };
 		CE34304222DA71A200667390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34304122DA71A200667390 /* AppDelegate.swift */; };
 		CE34304422DA71A200667390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34304322DA71A200667390 /* ViewController.swift */; };
 		CE34304722DA71A200667390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE34304522DA71A200667390 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2550632315B63600632D43 /* MovieBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBrowser.swift; sourceTree = "<group>"; };
+		CE2550662315B65E00632D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DataStructures/Base.lproj/WebBrowser.storyboard; sourceTree = "<group>"; };
 		CE34303E22DA71A200667390 /* DataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE34304122DA71A200667390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE34304322DA71A200667390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2550682315B6F600632D43 /* WebBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CE2550652315B65E00632D43 /* WebBrowser.storyboard */,
+				CE2550632315B63600632D43 /* MovieBrowser.swift */,
+			);
+			path = WebBrowser;
+			sourceTree = "<group>";
+		};
 		CE34303522DA71A200667390 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 		CE34304022DA71A200667390 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				CE2550682315B6F600632D43 /* WebBrowser */,
 				CE34304122DA71A200667390 /* AppDelegate.swift */,
 				CE34304322DA71A200667390 /* ViewController.swift */,
 				CE34304522DA71A200667390 /* Main.storyboard */,
@@ -130,6 +144,7 @@
 			files = (
 				CE34304C22DA71A400667390 /* LaunchScreen.storyboard in Resources */,
 				CE34304922DA71A400667390 /* Assets.xcassets in Resources */,
+				CE2550672315B65E00632D43 /* WebBrowser.storyboard in Resources */,
 				CE34304722DA71A200667390 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +158,7 @@
 			files = (
 				CE34305422DAD60D00667390 /* SecondView.swift in Sources */,
 				CE34304422DA71A200667390 /* ViewController.swift in Sources */,
+				CE2550642315B63600632D43 /* MovieBrowser.swift in Sources */,
 				CE34304222DA71A200667390 /* AppDelegate.swift in Sources */,
 				CE53D73522F0B2D100D3AD06 /* FizzBuzz.swift in Sources */,
 			);
@@ -151,6 +167,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CE2550652315B65E00632D43 /* WebBrowser.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE2550662315B65E00632D43 /* Base */,
+			);
+			name = WebBrowser.storyboard;
+			sourceTree = "<group>";
+		};
 		CE34304522DA71A200667390 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

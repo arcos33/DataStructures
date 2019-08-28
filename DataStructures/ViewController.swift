@@ -13,18 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let linkedList = LinkedList()
-        
-        linkedList.append(value: Webpage(url: "www.google.com", name: "Google"))
-        linkedList.append(value: Webpage(url: "www.yahoo.com", name: "Yahoo"))
-        linkedList.append(value: Webpage(url: "www.cnn.com", name: "CNN"))
-        linkedList.append(value: Webpage(url: "www.univision", name: "Univision"))
-        
-        
     }
 }
 
-class Node {
+class Node: Equatable {
+    static func ==(lhs: Node, rhs: Node) -> Bool {
+        return lhs.value.title == rhs.value.title
+    }
+    
     var value: Webpage
     weak var previous: Node?
     var next: Node?
@@ -82,6 +78,6 @@ extension LinkedList: CustomStringConvertible {
 
 
 struct Webpage {
-    var url: String
-    var name: String
+    var image: UIImage
+    var title: String
 }
